@@ -1,9 +1,9 @@
 # GPRS-using-AI
-Pretraining with Grayscale Imagery
+1.Pretraining with Grayscale Imagery
 
 To enhance feature extraction, we pre-trained the initial layers of our CNN using grayscale images from the CIFAR-10 dataset before fine-tuning on GPR data.
 
-CNN Training Process
+2.CNN Training Process
 
 The network parameters were optimized jointly using the Adam optimizer.
 
@@ -13,11 +13,11 @@ Multiple epochs were run to refine the network, with performance evaluation on a
 
 The model with the highest validation accuracy was selected for final testing.
 
-Network Pretraining Strategy
+3.Network Pretraining Strategy
 
 We transferred up to four convolutional layers from the pre-trained CIFAR-10 model to initialize our GPR CNN, improving feature learning efficiency.
 
-Data Augmentation for Robust Training
+4.Data Augmentation for Robust Training
 
 Vertical augmentation: Patches were extracted at intervals of one pixel, up to four pixels above and below the maximum keypoint location for threats.
 
@@ -25,7 +25,7 @@ Horizontal augmentation: Additional patches were selected two pixels away from t
 
 Non-threat sampling: To balance the dataset, 33% of the non-threat samples were randomly drawn from three A-scans—the central A-scan and one A-scan two pixels to the left and right.
 
-CNN Architecture
+5.CNN Architecture
 
 While we took inspiration from the original paper, we adapted the CNN structure to suit our dataset.
 
