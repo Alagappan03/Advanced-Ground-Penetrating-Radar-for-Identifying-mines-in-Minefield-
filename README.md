@@ -32,4 +32,5 @@ While we took inspiration from the original paper, we adapted the CNN structure 
 Modifications included adjustments in the number of convolutional layers, kernel sizes, and activation functions to optimize performance for our specific GPR dataset.
 
 Conclusion
+
 Our approach successfully leveraged CNNs for buried threat detection, demonstrating the effectiveness of pretraining and data augmentation strategies. The modifications to the architecture helped improve accuracy and generalization, paving the way for further advancements in GPR-based threat detection systems.
